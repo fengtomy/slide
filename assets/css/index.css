@@ -11,10 +11,12 @@ ul, li{
     padding: 0;
     list-style-type: none;
 }
+.ml10{margin-left: 10px;}
 .xh-box{
     position: absolute;
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 .img-box{
     position: absolute;
@@ -32,4 +34,27 @@ ul, li{
 .img-box li img{
     width: 100%;
     height: 100%;
+}
+.dot-box{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+}
+.dot{
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+    border: 1px solid #6b6b6b;
+    border-radius: 100%;
+    float: left;
+    cursor: pointer;
+    margin-top: 1px;
+    transition: all .1s;
+}
+.dot.active{
+    width: 16px;
+    height: 16px;
+    background-color: #6b6b6b;
+    border: 1px solid #fff;
+    margin-top: 0px;
 }
