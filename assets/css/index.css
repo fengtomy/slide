@@ -6,3 +6,30 @@ html, body{
     font-size: 14px;
     color: #fff;
 }
+ul, li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.xh-box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.img-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    height: 100%;
+}
+.img-box li{
+    height: 100%;
+    position: relative;
+    float: left;
+    top: 0;
+}
+.img-box li img{
+    width: 100%;
+    height: 100%;
+}

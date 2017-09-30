@@ -14,13 +14,16 @@
 <script src="assets/js/jquery.slide.js"></script>
 <script>
     $(function(){
-        var localPath = "./assets/image/",
-            jpg = ".jpg";
+        function addImg(){
+            var localPath = "./assets/image/",
+                jpg = ".jpg";
             imgStr = "";
-        for(var i = 1; i <= 5; i++){
-            imgStr += "<img src='"+localPath + i + jpg+"'>";
+            for(var i = 1; i <= 5; i++){
+                imgStr += "<li><img src='"+localPath + i + jpg+"'></li>";
+            }
+            $("#img-box").append(imgStr);
         }
-        $("#img-box").append(imgStr);
+        addImg();
         $("#xh-box").slide();
     });
 </script>
